@@ -1,0 +1,95 @@
+# ============================================================================
+# Heart Disease Prediction using Artificial Neural Networks (ANN)
+# Requirements File - Install with: pip install -r requirements.txt
+# ============================================================================
+
+# Core Data Science Libraries
+# ============================
+pandas>=1.0.0              # Data manipulation and analysis
+numpy>=1.18.0              # Numerical computing and array operations
+scipy>=1.5.0               # Scientific computing utilities
+
+# Visualization Libraries
+# =======================
+matplotlib>=3.0.0          # 2D plotting and visualization
+seaborn>=0.10.0            # Statistical data visualization
+plotly>=4.0.0              # Interactive visualizations (optional)
+
+# Machine Learning Libraries
+# ===========================
+scikit-learn>=0.22.0       # ML preprocessing, metrics, and utilities
+
+# Deep Learning Frameworks
+# ========================
+# TensorFlow and Keras (Keras is now part of TensorFlow)
+tensorflow>=2.0.0          # Deep learning framework (choose one based on CPU/GPU)
+# tensorflow-gpu>=2.0.0    # Use this for GPU support (requires CUDA)
+# For better performance, install tensorflow-metal (Mac with M1/M2)
+# tensorflow-metal>=0.5.0
+
+# Optional but Recommended
+# ========================
+jupyter>=1.0.0             # Interactive notebooks
+jupyterlab>=2.0.0          # Enhanced Jupyter environment
+ipython>=7.0.0             # Enhanced Python shell
+ipykernel>=5.0.0           # IPython kernel for Jupyter
+
+# Development & Utilities
+# =======================
+python-dotenv>=0.10.0      # Environment variable management
+tqdm>=4.50.0               # Progress bars
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+# 
+# Option 1: Basic Installation (CPU - Recommended for beginners)
+# -------
+# pip install -r requirements.txt
+#
+# Option 2: For GPU (Much faster training)
+# -------
+# pip install tensorflow-gpu keras numpy pandas scikit-learn matplotlib seaborn
+#
+# Option 3: Google Colab (Already has most libraries installed!)
+# -------
+# Just run: !pip install seaborn
+#
+# Option 4: Using Anaconda (Alternative package manager)
+# -------
+# conda create -n ann-env python=3.9
+# conda activate ann-env
+# pip install -r requirements.txt
+#
+# ============================================================================
+# VERIFICATION
+# ============================================================================
+# 
+# After installation, verify everything works:
+#
+# python -c "
+# import pandas as pd
+# import numpy as np
+# import tensorflow as tf
+# import sklearn
+# print('✓ All libraries installed successfully!')
+# print(f'TensorFlow version: {tf.__version__}')
+# "
+#
+# ============================================================================
+# TROUBLESHOOTING
+# ============================================================================
+#
+# Issue: "No module named 'tensorflow'"
+# Solution: pip install tensorflow
+#
+# Issue: CUDA/GPU not found
+# Solution: Install tensorflow-gpu or tensorflow-metal (Mac)
+#
+# Issue: "Incompatible library versions"
+# Solution: pip install --upgrade -r requirements.txt
+#
+# Issue: Memory error during installation
+# Solution: pip install --no-cache-dir -r requirements.txt
+#
+# ============================================================================
